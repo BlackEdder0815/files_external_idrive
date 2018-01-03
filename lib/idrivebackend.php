@@ -12,13 +12,13 @@ require_once __DIR__ . '/../../../lib/private/legacy/template/functions.php';
 class IDriveBackend extends Backend{
 	public function __construct(IL10N $l) {
 		$this
-		->setIdentifier('acd')
-		->addIdentifierAlias('\OCA\Files_External\Storage\ACD') // legacy compat
-		->setStorageClass(\OCA\Files_External_ACD\lib\ACD::class)
-		->setText($l->t('ACD'))
+		->setIdentifier('idrive')
+		->addIdentifierAlias('\OCA\Files_External\Storage\IDrive') // legacy compat
+		->setStorageClass(\OCA\Files_External_IDrive\lib\IDrive::class)
+		->setText($l->t('iDrive'))
 		->addParameters([
-				(new DefinitionParameter('email', $l->t('E-Mail'))),
-				(new DefinitionParameter('auth-code', $l->t('Auth-Code'))),
+				(new DefinitionParameter('username', $l->t('Username'))),
+				(new DefinitionParameter('Password', $l->t('Password'))),
 				(new DefinitionParameter('passphrase', $l->t('(optional) Pass-Phrase for file name encryption')))
 					->setFlag(DefinitionParameter::FLAG_OPTIONAL),
 		])
@@ -28,7 +28,7 @@ class IDriveBackend extends Backend{
 	}
 	
 	function getCustomJs() {
-		\script('files_external_acd', 'acd');
+		\script('files_external_idrive', 'idrive');
 		return [];
 	}
 }

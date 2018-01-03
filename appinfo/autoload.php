@@ -21,6 +21,6 @@ require_once __DIR__ . '/../3rd-party/autoload.php';
 
 
 require_once __DIR__ . '/Application.php';
-require_once __DIR__ . '/../lib/acd.php';
-require_once __DIR__ . '/../lib/acdbackend.php';
+require_once __DIR__ . '/../lib/idrive.php';
+require_once __DIR__ . '/../lib/idrivebackend.php';
 require_once __DIR__ . '/../lib/OwnCloudCache.php';

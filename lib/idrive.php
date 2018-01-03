@@ -1,23 +1,17 @@
 <?php
 /**
- * ownCloud - acdstorage
+ * nextCloud - idrive-storage
  *
- * This file is licensed under the Affero General Public License version 3 or
- * later. See the COPYING file.
  *
  * @author Patrick Sona <dev@patson.de>
- * @copyright Patrick Sona 2016
+ * @copyright Patrick Sona 2018
  * 
  * see https://github.com/owncloud/documentation/issues/1112 for some help related to the used methods
  */
 
 namespace OCA\Files_External_IDrive\lib;
 
-use CloudDrive\CloudDrive;
-use CloudDrive\Cache\OwnCloud;
-use CloudDrive\Node;
 use Icewind\Streams\IteratorDirectory;
-use CloudDrive\Cryptor;
 
 $ACDinitalized = false;
 
