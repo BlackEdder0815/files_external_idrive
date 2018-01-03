@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<info>
+	<id>files_external_idrive</id>
+	<name>I-Drive storage support</name>
+	<description>I-Drive backend for files_external</description>
+	<licence>AGPL</licence>
+	<author>Patrick Sona</author>
+	<version>0.1.3</version>
+    <namespace>Files_External_IDrive</namespace>
+    <category>other</category>
+	<types>
+		<filesystem/>
+	</types>
+	<dependencies>
+		<nextcloud min-version="10" max-version="11"/>
+	</dependencies>
+</info>
